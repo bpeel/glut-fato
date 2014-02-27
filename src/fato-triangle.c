@@ -26,6 +26,7 @@ main(int argc, char **argv)
         glutInit(&argc, argv);
         glutCreateWindow("Triangle");
         glutDisplayFunc(display_cb);
+        glewInit();
 
         glutMainLoop();
 
