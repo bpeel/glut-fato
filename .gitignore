@@ -16,6 +16,7 @@
 /src/Makefile.in
 /src/fato-triangle
 /src/fato-mipmap-fb
+/src/fato-pbo
 /stamp-h1
 
 .deps

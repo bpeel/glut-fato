@@ -7,6 +7,7 @@ AM_CPPFLAGS = \
 bin_PROGRAMS = \
 	fato-mipmap-fb \
 	fato-triangle \
+	fato-pbo \
 	$(NULL)
 
 fato_triangle_SOURCES = \
@@ -14,6 +15,16 @@ fato_triangle_SOURCES = \
 	$(NULL)
 
 fato_triangle_LDADD = \
+	$(GL_LIBS) \
+	$(GLEW_LIBS) \
+	$(NOTBIT_EXTRA_LIBS) \
+	$(NULL)
+
+fato_pbo_SOURCES = \
+	fato-pbo.c \
+	$(NULL)
+
+fato_pbo_LDADD = \
 	$(GL_LIBS) \
 	$(GLEW_LIBS) \
 	$(NOTBIT_EXTRA_LIBS) \
