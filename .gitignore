@@ -14,6 +14,7 @@
 /missing
 /src/Makefile
 /src/Makefile.in
+/src/fato-ffs
 /src/fato-triangle
 /src/fato-mipmap-fb
 /src/fato-pbo

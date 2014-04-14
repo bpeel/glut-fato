@@ -5,9 +5,21 @@ AM_CPPFLAGS = \
 	$(NULL)
 
 bin_PROGRAMS = \
+	fato-ffs \
 	fato-mipmap-fb \
 	fato-triangle \
 	fato-pbo \
+	$(NULL)
+
+fato_ffs_SOURCES = \
+	fato-ffs.c \
+	fato-util.c \cd sr
+	$(NULL)
+
+fato_ffs_LDADD = \
+	$(GL_LIBS) \
+	$(GLEW_LIBS) \
+	$(NOTBIT_EXTRA_LIBS) \
 	$(NULL)
 
 fato_triangle_SOURCES = \
