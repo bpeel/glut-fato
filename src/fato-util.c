@@ -86,6 +86,7 @@ fato_create_shader_from_file(GLenum type,
                         strerror(errno));
                 goto done_source;
         }
+        source[statbuf.st_size] = '\0';
 
         shader = fato_create_shader(type, source);
 
