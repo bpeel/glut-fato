@@ -13,7 +13,7 @@ bin_PROGRAMS = \
 
 fato_ffs_SOURCES = \
 	fato-ffs.c \
-	fato-util.c \cd sr
+	fato-util.c \
 	$(NULL)
 
 fato_ffs_LDADD = \
