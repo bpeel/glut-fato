@@ -18,6 +18,7 @@
 /src/fato-triangle
 /src/fato-mipmap-fb
 /src/fato-pbo
+/src/fato-texture-array
 /stamp-h1
 
 .deps

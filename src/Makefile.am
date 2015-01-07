@@ -7,6 +7,7 @@ AM_CPPFLAGS = \
 bin_PROGRAMS = \
 	fato-ffs \
 	fato-mipmap-fb \
+	fato-texture-array \
 	fato-triangle \
 	fato-pbo \
 	$(NULL)
@@ -47,6 +48,17 @@ fato_mipmap_fb_SOURCES = \
 	$(NULL)
 
 fato_mipmap_fb_LDADD = \
+	$(GL_LIBS) \
+	$(EPOXY_LIBS) \
+	$(FATO_EXTRA_LIBS) \
+	$(NULL)
+
+fato_texture_array_SOURCES = \
+	fato-texture-array.c \
+	fato-util.c \
+	$(NULL)
+
+fato_texture_array_LDADD = \
 	$(GL_LIBS) \
 	$(EPOXY_LIBS) \
 	$(FATO_EXTRA_LIBS) \
