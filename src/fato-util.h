@@ -1,7 +1,7 @@
 #ifndef FATO_UTIL_H
 #define FATO_UTIL_H
 
-#include <GL/glew.h>
+#include <epoxy/gl.h>
 #include <stdbool.h>
 
 GLuint

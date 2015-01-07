@@ -1,6 +1,6 @@
 AM_CPPFLAGS = \
 	$(GL_CFLAGS) \
-	$(GLEW_CFLAGS) \
+	$(EPOXY_CFLAGS) \
 	$(FATO_EXTRA_CFLAGS) \
 	$(NULL)
 
@@ -18,7 +18,7 @@ fato_ffs_SOURCES = \
 
 fato_ffs_LDADD = \
 	$(GL_LIBS) \
-	$(GLEW_LIBS) \
+	$(EPOXY_LIBS) \
 	$(NOTBIT_EXTRA_LIBS) \
 	$(NULL)
 
@@ -28,7 +28,7 @@ fato_triangle_SOURCES = \
 
 fato_triangle_LDADD = \
 	$(GL_LIBS) \
-	$(GLEW_LIBS) \
+	$(EPOXY_LIBS) \
 	$(NOTBIT_EXTRA_LIBS) \
 	$(NULL)
 
@@ -38,7 +38,7 @@ fato_pbo_SOURCES = \
 
 fato_pbo_LDADD = \
 	$(GL_LIBS) \
-	$(GLEW_LIBS) \
+	$(EPOXY_LIBS) \
 	$(NOTBIT_EXTRA_LIBS) \
 	$(NULL)
 
@@ -48,6 +48,6 @@ fato_mipmap_fb_SOURCES = \
 
 fato_mipmap_fb_LDADD = \
 	$(GL_LIBS) \
-	$(GLEW_LIBS) \
+	$(EPOXY_LIBS) \
 	$(NOTBIT_EXTRA_LIBS) \
 	$(NULL)

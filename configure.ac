@@ -65,7 +65,7 @@ AS_IF([test "x$have_freeglut" != "xyes"],
 FATO_EXTRA_LIBS="$FATO_EXTRA_LIBS -lfreeglut"
 
 PKG_CHECK_MODULES([GL], [gl])
-PKG_CHECK_MODULES([GLEW], [glew])
+PKG_CHECK_MODULES([EPOXY], [epoxy])
 
 AC_SUBST(FATO_EXTRA_CFLAGS)
 AC_SUBST(FATO_EXTRA_LIBS)

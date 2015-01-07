@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <string.h>
-#include <GL/glew.h>
+#include <epoxy/gl.h>
 #include <GL/freeglut.h>
 
 #define TEX_SIZE 1024
@@ -131,7 +131,6 @@ main(int argc, char **argv)
 {
         glutInit(&argc, argv);
         glutCreateWindow("Triangle");
-        glewInit();
         glutDisplayFunc(display_cb);
         glutReshapeFunc(reshape_cb);
 

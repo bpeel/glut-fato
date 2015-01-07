@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <stdio.h>
-#include <GL/glew.h>
+#include <epoxy/gl.h>
 #include <GL/freeglut.h>
 
 static GLuint tex;
@@ -121,7 +121,6 @@ main(int argc, char **argv)
         glutInitWindowSize(WINDOW_WIDTH, WINDOW_HEIGHT);
         glutCreateWindow("Look! A triangle!");
         glutDisplayFunc(display_cb);
-        glewInit();
 
         tex = create_tex();
 

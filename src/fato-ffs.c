@@ -1,7 +1,7 @@
 #include "config.h"
 
 #include <stdlib.h>
-#include <GL/glew.h>
+#include <epoxy/gl.h>
 #include <GL/freeglut.h>
 #include <stdbool.h>
 #include <stdio.h>
@@ -67,7 +67,6 @@ main(int argc, char **argv)
         glutInit(&argc, argv);
         glutCreateWindow("Triangle");
         glutDisplayFunc(display_cb);
-        glewInit();
 
         glutSetWindowData(&data);
 
