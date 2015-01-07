@@ -62,7 +62,6 @@ AC_CHECK_HEADER([GL/freeglut.h],
 AC_CHECK_LIB([glut], [glutInit], [], [have_freeglut=no])
 AS_IF([test "x$have_freeglut" != "xyes"],
       [AC_MSG_ERROR([freeglut is required])])
-FATO_EXTRA_LIBS="$FATO_EXTRA_LIBS -lfreeglut"
 
 PKG_CHECK_MODULES([GL], [gl])
 PKG_CHECK_MODULES([EPOXY], [epoxy])
