@@ -19,7 +19,7 @@ fato_ffs_SOURCES = \
 fato_ffs_LDADD = \
 	$(GL_LIBS) \
 	$(EPOXY_LIBS) \
-	$(NOTBIT_EXTRA_LIBS) \
+	$(FATO_EXTRA_LIBS) \
 	$(NULL)
 
 fato_triangle_SOURCES = \
@@ -29,7 +29,7 @@ fato_triangle_SOURCES = \
 fato_triangle_LDADD = \
 	$(GL_LIBS) \
 	$(EPOXY_LIBS) \
-	$(NOTBIT_EXTRA_LIBS) \
+	$(FATO_EXTRA_LIBS) \
 	$(NULL)
 
 fato_pbo_SOURCES = \
@@ -39,7 +39,7 @@ fato_pbo_SOURCES = \
 fato_pbo_LDADD = \
 	$(GL_LIBS) \
 	$(EPOXY_LIBS) \
-	$(NOTBIT_EXTRA_LIBS) \
+	$(FATO_EXTRA_LIBS) \
 	$(NULL)
 
 fato_mipmap_fb_SOURCES = \
@@ -49,5 +49,5 @@ fato_mipmap_fb_SOURCES = \
 fato_mipmap_fb_LDADD = \
 	$(GL_LIBS) \
 	$(EPOXY_LIBS) \
-	$(NOTBIT_EXTRA_LIBS) \
+	$(FATO_EXTRA_LIBS) \
 	$(NULL)
